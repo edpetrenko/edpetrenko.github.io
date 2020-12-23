@@ -1,0 +1,393 @@
+/*header{
+    text-align: center;
+    background-color: #e6c867;
+    color: white;
+    margin: 20px 0 20px 0;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.img1{
+    display: flex;
+    width: 55%;
+    height: 50%;
+}
+
+input{
+    display: none;
+}
+
+
+main{
+    background-color: #77726b;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.goods{
+    order: -1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 10px;
+    font-size: 20px;
+}
+.nav > label{
+
+    background-color:  #5c5730;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+
+#Maff:checked ~ .goods > :not(.maffin),
+#Tortiki:checked ~ .goods > :not(.tort),
+#Tistechki:checked ~ .goods > :not(.tist),
+#Zele:checked ~ .goods > :not(.zeles),
+#Ekleri:checked ~ .goods > :not(.ekler)
+{
+    display: none;
+}
+.nav > label:hover{
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#Maff:checked ~ .nav [for="Maff"],
+#Tortiki:checked ~ .nav [for="Tortiki"],
+#Tistechki:checked ~ .nav [for="Tistechki"],
+#Zele:checked ~ .nav [for="Zele"],
+#Ekleri:checked ~ .nav [for="Ekleri"],
+#without:checked ~ .nav [for="without"] {
+    background-color: rgb(139, 148, 21);
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.frame{
+    border-radius: 5px;
+    background-color: white;
+}
+.frame:hover{
+    transform: scale(1.075);
+    background-color: #c0d1ed;
+    z-index: 1;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+.calories{
+    position: relative;
+    border-top: 5px solid #F5DEB3;
+    padding-left: 10px;
+}
+
+
+
+footer{
+    
+    color: rgb(0, 0, 0);
+}
+.info2{
+    display: inline;
+    float: right;
+}
+.info1{
+    display: inline;
+}
+footer > a{
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+@media (max-width: 800px){
+
+    main{
+        grid-template-columns: 100%;
+    }
+    .nav{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .goods{
+        order: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .content{
+        display: flex;
+        flex-flow: column;
+    }
+    .img{
+        width: 100%;
+    }
+    .info2{
+        float: right;
+    }
+    .info1{
+        display: block;
+    }
+
+    .maffin .content > p::before,
+    .tist .content > p::before,
+    .tort .content > p::before,
+    .zeles .content > p::before,
+    .ekler .content > p::before{
+        display: inline;
+    }
+
+   
+    footer > .info2{
+        display: inline;
+        
+    }
+}
+
+
+
+
+
+@media (max-width: 500px){
+    .nav{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .goods{
+        grid-template-columns: 1fr;
+    }
+    .info{
+        grid-template-columns: 6fr;
+        
+    }
+    .info2{
+        display: block;
+        float:left;
+    }
+    .info1{
+        display: block;
+    }
+    a{
+        display:block;
+    }
+}*/
+header{
+    text-align: center;
+    background-color: #292b36;
+    color: white;
+    margin: 1% 0 0.75% 0;
+}
+
+img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.img1{
+    display: flex;
+    width: 55%;
+    height: 50%;
+}
+
+input{
+    display: none;
+}
+
+
+main{
+    background-color: #a1e8f0;
+    display: grid;
+    grid-template-columns: 6fr 1fr;
+    grid-gap: 10px;
+    padding: 10px;
+
+}
+
+.nav{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    grid-gap: 10px;
+}
+
+.goods{
+    order: -1;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    grid-gap: 10px;
+    font-size: 20px;
+}
+.nav > label{
+
+    background-color:  #242740;
+    color: rgb(255, 255, 255);
+    width: 100%;
+    padding-top: 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: white;
+}
+.nav > label:hover{
+    font-weight: bold;
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+
+#Maff:checked ~ .goods > :not(.maffin),
+#Tortiki:checked ~ .goods > :not(.tort),
+#Tistechki:checked ~ .goods > :not(.tist),
+#Zele:checked ~ .goods > :not(.zeles),
+#Ekleri:checked ~ .goods > :not(.ekler)
+{
+    display: none;
+}
+
+#Maff:checked ~ .nav [for="Maff"],
+#Tortiki:checked ~ .nav [for="Tortiki"],
+#Tistechki:checked ~ .nav [for="Tistechki"],
+#Zele:checked ~ .nav [for="Zele"],
+#Ekleri:checked ~ .nav [for="Ekleri"],
+#without:checked ~ .nav [for="without"] {
+    background-color: white;
+    color: #242740;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.frame{
+    border-radius: 5px;
+    background-color: white;
+}
+
+.frame:hover{
+    transform: scale(1.075);
+    background-color: #c0d1ed;
+    z-index: 1;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 10px;
+}
+
+.calories{
+    position: relative;
+    border-top: 5px solid #2c2e47;
+    padding-left: 10px;
+}
+
+
+
+footer{
+    
+    color: black;
+}
+.info2{
+    display: inline;
+    float: right;
+}
+.info1{
+    display: inline;
+}
+footer > a{
+    color: black;
+}
+
+
+
+
+
+@media (max-width: 800px){
+
+    main{
+        grid-template-columns: 100%;
+    }
+    .nav{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .goods{
+        order: 0;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .content{
+        display: flex;
+        flex-flow: column;
+    }
+    .img{
+        width: 100%;
+    }
+    .info2{
+        float: right;
+    }
+    .info1{
+        display: block;
+    }
+
+    .maffin .content > p::before,
+    .tist .content > p::before,
+    .tort .content > p::before,
+    .zeles .content > p::before,
+    .ekler .content > p::before{
+        display: inline;
+    }
+
+   
+    footer > .info2{
+        display: inline;
+        
+    }
+}
+
+
+
+
+
+@media (max-width: 500px){
+    .nav{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .goods{
+        grid-template-columns: 1fr;
+    }
+    .info{
+        grid-template-columns: 6fr;
+        
+    }
+    .info2{
+        display: block;
+        float:left;
+    }
+    .info1{
+        display: block;
+    }
+    a{
+        display:block;
+    }
+}
